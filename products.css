@@ -1,0 +1,188 @@
+* {
+    box-sizing:border-box;
+}
+
+header {
+    display:flex;
+    position:fixed;
+    align-items:center;
+    height:3rem;
+    width:100%; /* THIS WAS ESSENTAL for getting the child elements to space properly*/
+    z-index:1;
+    background-color: rgb(255, 236, 166);
+}
+
+.brand {
+    padding-left:4rem;
+    font-family: 'Roboto Slab', serif;
+    font-size:2rem;
+    color:black;
+    text-decoration:none;
+    width:55%;
+}
+header a{
+    color:black;
+    text-decoration:none;
+}
+
+nav {
+    display:flex;
+    width:45%; /*ALSO ESSENTIAL for aligning list items within the header. Otherwise, it takes up the least amount of horizontal space and leave the space to the right of it allocated.*/
+
+}
+ul {
+    display:inline-flex;
+    list-style-type:none;
+    margin-left: auto;
+}
+
+li{
+    padding:1rem;
+    font-family:"Roboto", "sans-serif";
+}
+
+li:hover {
+    text-decoration:underline;
+}
+
+@media only screen and (max-width: 768px){
+    .brand {
+        padding-left:.5rem;
+        font-size:1rem;
+        width:45%;
+    }
+    li {
+        padding:0.5rem;
+    }
+    ul {
+        padding:0;
+    }
+}
+
+.jumbotron {
+    position:relative;
+    top:3rem;
+    display:flex;
+    background-image:url("photomontage.jpg");
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+    width:100%;
+    min-height: 15rem;
+    background-position:bottom;
+}
+.jumbotron h1 {
+    color:white;
+    text-align: center;
+    background-color: rgba(1,1,1,.75);
+    padding:1rem;
+}
+
+.space {
+
+    padding-top:3rem;
+}
+
+.assess h1 {
+    margin-top:4rem;
+    text-align: center;
+}
+
+.assess h3 {
+    max-width: 700px;
+    margin: 0 auto;
+    padding:1rem;
+}
+
+.products {
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.test {
+
+    width:25%;
+    padding:.5rem;
+    flex-direction:column;
+    justify-content: center;
+}
+.test img {
+
+    max-height:100px;
+    height:auto;
+    width:100%;
+    object-fit:cover;
+    overflow:hidden;
+}
+.test h2 {
+    text-align:center;
+}
+
+.personality {
+    background-color: hsla(29, 76%, 63%, 1);
+}
+.strengths {
+    background-color: hsla(268, 100%, 60%, 1)
+}
+.interests{
+    background-color: hsla(54, 100%, 70%, 1);
+}
+.aptitudes {
+    background-color: hsla(215, 100%, 65%, 1);
+}
+@media only screen and (max-width: 768px){
+    .test {
+        width:50%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .test {
+        width:100%;
+    }
+}
+
+.construction {
+    color:red;
+    text-align: center;
+}
+
+.alt {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+}
+
+.test2 {
+    display:flex;
+    flex-direction:column;
+    width:30%;
+    text-align: center;
+}
+
+.test2 h3{
+    text-align: left;
+}
+
+.test2 a {
+    text-align: center;
+    width:100%;
+    font-weight:bold;
+    /* text-decoration:none; */
+}
+
+@media only screen and (max-width:768px){
+    .test2 {
+        width:95%;
+    }
+}
+
+.email {
+    margin-top:3rem;
+    background-color: blanchedalmond;
+    width:100%;
+    text-align: center;
+}
